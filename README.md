@@ -1,4 +1,4 @@
-## employeecare
+## Employee Leave Management System
 
 A project that deals with managing employees in a workspace by eliminating some of the manual tasks and making things more easier than
 before, it's a web application built using Spring framework of Java along with other technologies.
@@ -42,8 +42,8 @@ You can make requests with GET, POST, PUT & DELETE. Find the respective API's in
 
 To run this project on localhost using Maven
 
-1. git clone https://github.com/mayurValsangkar/Employee-Leave-Management
-2. cd employeecare
+1. git clone https://github.com/mayurValsangkar/employee-leave-management-system
+2. create data base
 3. Read DB instructions from /sql/mysql-db.md file
 5. Run mvn clean install
 6. Run mvn spring-boot:run
