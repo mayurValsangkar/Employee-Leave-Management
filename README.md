@@ -42,7 +42,7 @@ You can make requests with GET, POST, PUT & DELETE. Find the respective API's in
 
 To run this project on localhost using Maven
 
-1. git clone https://github.com/mayurValsangkar/employee-leave-management-system
+1. git clone https://github.com/mayurValsangkar/Employee-Leave-Management.git
 2. create data base
 3. Read DB instructions from /sql/mysql-db.md file
 5. Run mvn clean install
