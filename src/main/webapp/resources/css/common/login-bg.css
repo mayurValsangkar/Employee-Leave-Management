@@ -1,20 +1,29 @@
-/* body {
-	background-image:url('../../images/loginbackground.jpg');
-	background-repeat: no-repeat;
-	background-size: cover
-} */
 body {
-	background-image: linear-gradient(to right, #ffffff, #2381de);
+  background-image: url('../../images/loginbackground1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a {
-	color: white;
-	text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 #bottom-links {
-	margin-top: 124px;
-	font-family: 'Roboto Slab', serif;
-	font-family:16px;
-	text-align: center;
+  margin-top: 124px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

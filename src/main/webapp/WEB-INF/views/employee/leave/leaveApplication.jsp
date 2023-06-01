@@ -20,7 +20,7 @@
 
 <div style="margin-left:10px; margin-top:10px;">
 
-<form method="post" action="leaveapplication">
+<form method="post" action="leaveapplication" onsubmit="return validateForm()">
 Leave Type : <select name="leave_type">
 <option value="Casual Leave">Casual Leave</option>
 <option value="Medical Leave">Medical Leave</option>
@@ -52,6 +52,7 @@ Leave Type : <select name="leave_type">
 <input type="submit" value="Apply for Leave">
 </form>
 </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

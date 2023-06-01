@@ -31,7 +31,7 @@ public class Employee {
 	@Column(name="LASTNAME")
 	private String lastname;
 
-	@Column(name="EMAIL")
+	@Column(name="EMAIL", unique = true)
 	private String email;
 
 	@Column(name="DOB")
@@ -45,6 +45,21 @@ public class Employee {
 
 	@Column(name="CITY")
 	private String city;
+
+	@Column(name="Contact_Number")
+	private String contactNo;
+
+	@Column(name="BLOOD_Group")
+	private String bloodGroup;
+
+
+	public String getContactNo() {
+		return contactNo;
+	}
+
+	public void setContactNo(String contactNo) {
+		this.contactNo = contactNo;
+	}
 
 	@ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	@JoinTable(
@@ -60,8 +75,16 @@ public class Employee {
 
 	}
 
-	public Employee(String password, String firstname, String lastname, String email, String dob,
-			String gender, String address, String city, Collection<Role> roles) {
+	public String getBloodGroup() {
+		return bloodGroup;
+	}
+
+	public void setBloodGroup(String bloodGroup) {
+		this.bloodGroup = bloodGroup;
+	}
+
+	public Employee(String firstname, String lastname, String email, String password, String dob,
+			String gender, String address, String city, Collection<Role> roles, String  contactNoNo, String bloodGroup) {
 		this.password = password;
 		this.firstname = firstname;
 		this.lastname = lastname;
@@ -71,6 +94,8 @@ public class Employee {
 		this.address = address;
 		this.city = city;
 		this.roles = roles;
+		this.contactNo = contactNoNo;
+		this.bloodGroup = bloodGroup;
 	}
 
 	public Long getEid() {

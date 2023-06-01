@@ -1,17 +1,41 @@
 #dashboard-heading {
-	font-family: 'Roboto Slab', serif;
-	font-size: 23px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 28px;
+  margin-top: 20px;
+  color: #5c5771;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-#register-new-emp{
-    font-size: 17px;
-    margin-top: 15px;
-    background-color: white;
-    border: 2px solid black;
-	font-family: 'Roboto Slab', serif;
+#register-new-emp {
+  font-size: 17px;
+  margin-top: 15px;
+  background-color: white;
+  border: 2px solid black;
+  font-family: 'Roboto Slab', serif;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-th,td{
-	font-family: 'Roboto Slab', serif;
-	font-size: 15px;
+#register-new-emp:hover {
+  background-color: #5c5771;
+  color: white;
+  transform: scale(1.05);
+}
+
+th, td {
+  font-family: 'Roboto Slab', serif;
+  font-size: 15px;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+  color: #5c5771;
+}
+
+td {
+  color: #555555;
 }

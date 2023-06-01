@@ -43,34 +43,45 @@ public class EmployeeController {
 	public String employeelogin() {
 		return "authentication/employeeLogin";
 	}
+
 	@RequestMapping(value = "/empdashboard", method=RequestMethod.GET)
 	public String employeeHomepage() {
 		return "employee/employeeHomepage";
 	}
+
 	@RequestMapping("/empdashboard/myprofile")
 	public String employeeProfileSearchForm(){
 		return "employee/employeeSearchForm";
 	}
+
 	@RequestMapping("/empdashboard/request")
 	public String employeeRequest(){
 		return "employee/employeeRequest";
 	}
+
+	@RequestMapping("/empdashboard/calender")
+	public String showCalender(){return "employee/Calender/calender";}
+
 	@RequestMapping("/empdashboard/raiseissue")
 	public String employeeRaiseIssue(){
 		return "employee/employeeRaiseIssue";
 	}
+
 	@RequestMapping("/empdashboard/attendance")
 	public String employeeAttendance(){
 		return "employee/employeeAttendance";
 	}
+
 	@RequestMapping("/empdashboard/document")
 	public String employeeDocuments(){
 		return "employee/employeeDocuments";
 	}
+
 	@RequestMapping("/empdashboard/leaveapplication")
 	public String leaveApplication(){
 		return "employee/leave/leaveApplication";
 	}
+
 	@RequestMapping(value = "/empdashboard/logout", method = RequestMethod.GET)
 	public String employeeLogout() {
 		return "redirect:/";

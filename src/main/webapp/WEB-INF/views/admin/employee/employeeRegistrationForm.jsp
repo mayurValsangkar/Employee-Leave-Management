@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/admin/admin-sidebar.css">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/fonts/base.css">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/admin/registeremployee.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 <title>Register New Employee</title>
 </head>
 <body>
@@ -42,23 +44,56 @@
 								<td><form:label path="email">
 										<spring:message text="Email" />
 									</form:label></td>
-								<td><form:input path="email" required="true"
+								<td><form:input path="email" type="email" required="true"
 										placeholder="Email" /></td>
 							</tr>
 							<tr>
-								<td><form:label path="dob">
-										<spring:message text="DOB" />
-									</form:label></td>
-								<td><form:input path="dob" required="true"
-										placeholder="DOB (DD/MM/YYYY)" /></td>
-							</tr>
+                                <td><form:label path="password">
+                                        <spring:message text="Password" />
+                                    </form:label></td>
+                                <td><form:input path="password" required="false"
+                                        placeholder="Password" /></td>
+                            </tr>
+							<td>
+                                <form:label path="dob">
+                                    <spring:message text="DOB" />
+                                </form:label>
+                            </td>
+                            <td>
+                                <form:input path="dob" id="datepicker" required="true" placeholder="DOB (DD/MM/YYYY)" />
+                            </td>
+							<tr>
+                                <td><form:label path="bloodGroup">
+                                        <spring:message text="Blood Group" />
+                                    </form:label></td>
+                                <td>
+                                    <form:select path="bloodGroup" required="true">
+                                        <form:option value="" label="-- Select Blood Group --" />
+                                        <form:option value="A+" label="A+" />
+                                        <form:option value="A-" label="A-" />
+                                        <form:option value="B+" label="B+" />
+                                        <form:option value="B-" label="B-" />
+                                        <form:option value="AB+" label="AB+" />
+                                        <form:option value="AB-" label="AB-" />
+                                        <form:option value="O+" label="O+" />
+                                        <form:option value="O-" label="O-" />
+                                    </form:select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><form:label path="contactNo">
+                                        <spring:message text="Contact Number" />
+                                    </form:label></td>
+                                <td><form:input path="contactNo" required="true"
+                                        placeholder="Contact Number" /></td>
+                            </tr>
 							<tr>
 								<td><form:label path="gender">
 										<spring:message text="Gender" />
 									</form:label></td>
-								<td><form:radiobutton path="gender" value="Male" /> <spring:message
-										text="Male" /> <form:radiobutton path="gender" value="Female" />
-									<spring:message text="Female" /></td>
+								<td><form:radiobutton path="gender" value="Male" /> <spring:message text="Male" />
+										<form:radiobutton path="gender" value="Female" /> <spring:message text="Female" />
+										<form:radiobutton path="gender" value="Other" /> <spring:message text="Other" /></td>
 							</tr>
 							<tr>
 								<td><form:label path="address">
@@ -82,7 +117,17 @@
 							</tr>
 						</table>
 					</form:form>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#datepicker").datepicker({
+                dateFormat: "dd/mm/yy",
+                maxDate: 0
+            });
+        });
+    </script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>

@@ -29,7 +29,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 	public Employee save(EmployeeRegistrationDto registrationDto) {
 		Employee employee = new Employee(registrationDto.getFirstname(),registrationDto.getLastname(),
 				registrationDto.getEmail(),registrationDto.getPassword(),registrationDto.getDob(),
-				registrationDto.getAddress(),registrationDto.getGender(),registrationDto.getCity(),Arrays.asList(new Role("EMP_ROLE")));
+				registrationDto.getGender(), registrationDto.getAddress(),registrationDto.getCity(), Arrays.asList(new Role("EMP_ROLE")), registrationDto.getContactNo(), registrationDto.getBloodGroup());
 
 		return employeeRepository.save(employee);
 	}

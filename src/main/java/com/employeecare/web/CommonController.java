@@ -39,24 +39,30 @@ public class CommonController {
 	public String contextPath() {
 		return "index";
 	}
+
 	@RequestMapping(value = "/forgotpassword", method = RequestMethod.GET)
 	public String forgotPassword() {
 		return "authentication/forgotPassword";
 	}
+
 	@RequestMapping("/about")
 	public String about() {
 		return "about";
 	}
+
 	@RequestMapping("/contact")
 	public String contact() {
 		return "contact";
 	}
+
 	@RequestMapping("/support")
 	public String support() {
 		return "support";
 	}
+
 	@RequestMapping("/createaccount")
 	public String home2() {
+
 		return "createaccount";
 	}
 	
@@ -77,7 +83,7 @@ public class CommonController {
 							+ "Email: "+emp.getEmail()+"\n"
 							+ "New Password: "+temp+"\n\n"
 							+ "Use the above EID and Password when trying to login into your account.\n\n"
-							+ "Thanks for using Employee Care.";
+							+ "Thanks for using Employee Leave Management System.";
 					SimpleMailMessage accountrecoverymail = new SimpleMailMessage();
 					accountrecoverymail.setTo(email);
 					accountrecoverymail.setSubject(subject);

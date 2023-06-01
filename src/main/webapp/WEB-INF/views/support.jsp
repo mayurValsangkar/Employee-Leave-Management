@@ -14,7 +14,7 @@
 	<div id="parent">
 		<h3>Support</h3>
 
-		<p>Send an email at [email]</p>
+		<p>Send an email at <a href="mailto:backendteam27@gmail.com">backendteam27@gmail.com</a></p>
 		<a href="/app">Redirect to home</a>
 		
 	</div>

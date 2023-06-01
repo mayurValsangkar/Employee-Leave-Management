@@ -1,3 +1,40 @@
+#login-header {
+  font-family: monospace;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-top: 35%;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #fff;
+  animation: typing 2s steps(10) infinite;
+  width: 100%;
+  letter-spacing: 5px;
+}
+
+#login-header .text-content {
+  display: inline-block;
+  animation: cursor 4s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+
 #admin-login-button, #employee-login-button {
     border: 0px;
     background: #2381de;
@@ -53,6 +90,8 @@ a {
 	font-family: 'DM Serif Display', serif;
 	color: white;
 	text-align: center;
+	font-size: 36px;
+    ine-height: 1.2;
 }
 
 #app-description {
@@ -63,13 +102,6 @@ a {
 		text-align: center;
 }
 
-#login-header {
-font-family: 'Roboto Slab', serif;
-font-weight: 700;
-color: white;
-text-align: center;
-margin-top: 35%;
-}
 
 #login-failed-header{
     font-family: 'Roboto Slab', serif;
@@ -147,3 +179,36 @@ td{
 	  width:100px;
 	  	  text-align:left;
 }
+
+#left-div {
+  background: linear-gradient(to bottom, #002147 0%, #2381de 100%);
+}
+
+#right-div {
+  background: linear-gradient(to bottom, #005691 0%, #2d6fbb 100%);
+}
+
+#parent-div {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#admin-login-button:hover, #employee-login-button:hover {
+  background: #005691;
+}
+
+#forgot-password-link {
+  background-color: #ffffff;
+  border-radius: 3px;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+#forgot-password-link:hover {
+  background-color: #2381de;
+  color: #ffffff;
+}
+
+
+
+
+

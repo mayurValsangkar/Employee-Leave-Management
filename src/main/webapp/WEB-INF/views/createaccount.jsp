@@ -14,9 +14,9 @@
 	<div id="parent">
 		<h3>Creating Admin Account</h3>
 
-		<p>Send en email at [email]</p>
+		<p>Send en email at <a href="mailto:backendteam27@gmail.com">backendteam27@gmail.com</a></p>
 		<a href="/app">Redirect to home</a>
-		
+
 	</div>
 
 </body>

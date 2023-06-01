@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/fonts/base.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/common/login-bg.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/index.css">
-<title>Employee Care</title>
+<title>Employee Leave Management System</title>
 </head>
 <body>
 	<div id="parent-div">

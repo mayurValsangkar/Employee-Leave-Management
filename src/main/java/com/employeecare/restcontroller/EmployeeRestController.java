@@ -54,7 +54,7 @@ public class EmployeeRestController {
 	public ResponseEntity<Employee> createEmployee(@RequestBody Employee employee) {
 		try {
 			Employee emp = employeeRepository
-					.save(new Employee(employee.getFirstname(),employee.getLastname(),employee.getEmail(),employee.getDob(),employee.getGender(),employee.getPassword(),employee.getAddress(),employee.getCity(),employee.getRoles()));
+					.save(new Employee(employee.getFirstname(),employee.getLastname(),employee.getEmail(),employee.getDob(),employee.getGender(),employee.getPassword(),employee.getAddress(),employee.getCity(),employee.getRoles(), employee.getContactNo(), employee.getBloodGroup()));
 			return new ResponseEntity<>(emp, HttpStatus.CREATED);
 		} catch (Exception e) {
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);

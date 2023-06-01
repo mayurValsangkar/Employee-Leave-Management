@@ -8,13 +8,13 @@
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/employee/employee-sidebar.css">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/fonts/base.css">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/employee/dashboard.css">
-<title>Employee Care</title>
+<title>Employee Leave Management</title>
 </head>
 <body>
 	<jsp:include page="/WEB-INF/views/common/employee/employeeSidebar.jsp"></jsp:include>
 	<div style="margin-left: 16%">
 		<div class="w3-container">
-			<h3 id="dashboard-heading">Dashboard(Demo)</h3>
+			<h3 id="dashboard-heading">Dashboard</h3>
 		</div>
 		<div id="dashboard-body">
 			<div id="top-boxes">

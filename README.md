@@ -23,9 +23,9 @@ contact to system admins.
 
 ### REST APIs Endpoints
 
-- GET: http://localhost:8080/app/apis/admin
-- GET: http://localhost:8080/app/apis/employee
-- GET: http://localhost:8080/app/apis/employeeleave
+- GET: http://localhost:9999/app/apis/admin
+- GET: http://localhost:9999/app/apis/employee
+- GET: http://localhost:9999/app/apis/employeeleave
 
 You can make requests with GET, POST, PUT & DELETE. Find the respective API's in the code.
 
@@ -37,14 +37,12 @@ You can make requests with GET, POST, PUT & DELETE. Find the respective API's in
 4. Maven
 5. HTML/CSS/JS/Bootstrap
 6. RESTful APIs
-7. Docker
-8. Kubernetes
 
 ### How to run?
 
 To run this project on localhost using Maven
 
-1. git clone https://www.github.com/rowhyt/employeecare
+1. git clone https://github.com/mayurValsangkar/Employee-Leave-Management
 2. cd employeecare
 3. Read DB instructions from /sql/mysql-db.md file
 5. Run mvn clean install
@@ -52,36 +50,13 @@ To run this project on localhost using Maven
 
 Note: You've to enable the less secure option in your Google account
 
-Project will be up at localhost:8080/app
+Project will be up at https://localhost:9999/app
 Note: See the user credentials in the DB to login into any Admin or Employee account
 
 Note: /app is the context path and if you change any request mapping or create a new one then change it accordingly, ignore the context path for hyperlinks in the view(JSP).
 
-### Deploying using Docker 
 
-To deploy this project with Docker:
 
-1. Change the database configuration first in application.properties
-2. locate docker-compose.yml and change the database user credentials identical to applicatio.properties and hit docker-compose up -d on project root directory
-3. Go into the shell of your mysql container and run the sql script available under sql folder
-4. Restart both the containers using docker-compose restart to reflect your changes
 
-To get into container shell of mysql: docker exec -it {mysql-container-name} bash
 
-Project will be up at localhost:8080/app
 
-### Deploying in Kubernetes Cluster
-
-To deploy this project on Minikube(single node cluster) with Kubernetes:
-
-1. git clone https://www.github.com/rowhyt/employeecare
-2. Change the database configuration first in application.properties
-3. docker pull mysql:5.7
-4. docker pull {dockerhub-username}/employeecare:1.0 or build on your own with docker build -t {dockerhub-username}/employeecare:1.0 .
-5. cd deployments
-6. Apply all the yml's file one by one
-7. Run the sql script in mysql pod
-8. Add the 192.168.###.## employeecare.com in your /etc/hosts file
-9. Hit employeecare.com:{PORT}/app in browser
-
-[git/rowhyt](https://www.github.com/rowhyt)

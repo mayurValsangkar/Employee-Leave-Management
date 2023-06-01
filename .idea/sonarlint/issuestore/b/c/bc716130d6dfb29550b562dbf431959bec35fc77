@@ -1,0 +1,17 @@
+
+k	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰ÔßÕýÿÿÿÿ
+k	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰ÔßÕýÿÿÿÿ
+k	java:S1170"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºùìãùÿÿÿÿ
+f	java:S117W"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·šãô
+k	java:S117g"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ¬Öªüÿÿÿÿ
+k	java:S117o"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÅ‘šúÿÿÿÿ
+j	java:S116"URename this field "leave_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ýÝøé
+k	java:S116 "VRename this field "leave_start" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î¾Æ´
+n	java:S116#"TRename this field "leave_end" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­£ªÏüÿÿÿÿ
+[	java:S107/"AConstructor has 8 parameters, which is greater than 7 authorized.(‰ÔßÕýÿÿÿÿ
+b	java:S100S"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—óÒ}
+c	java:S100W"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·šãô
+h	java:S100c"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿéÈ¶ýÿÿÿÿ
+h	java:S100g"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ¬Öªüÿÿÿÿ
+h	java:S100k"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ‚¹óüÿÿÿÿ
+h	java:S100o"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÅ‘šúÿÿÿÿ
